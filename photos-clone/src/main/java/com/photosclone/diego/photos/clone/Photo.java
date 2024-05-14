@@ -1,5 +1,6 @@
 package com.photosclone.diego.photos.clone;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotEmpty;
 
 public class Photo {
@@ -7,7 +8,7 @@ public class Photo {
     @NotEmpty
     private String fileName;
 
-
+    @JsonIgnore
     private byte[] data;
 
     //raw data
