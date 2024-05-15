@@ -5,8 +5,11 @@ import jakarta.validation.constraints.NotEmpty;
 
 public class Photo {
     private String id;
+
     @NotEmpty
     private String fileName;
+
+    private String contentType;
 
     @JsonIgnore
     private byte[] data;
@@ -30,6 +33,10 @@ public class Photo {
         this.fileName = fileName;
     }
 
+    public String getContentType() {
+        return contentType;
+    }
+
     public String getId() {
         return id;
     }
@@ -44,5 +51,9 @@ public class Photo {
 
     public void setData(byte[] data) {
         this.data = data;
+    }
+
+    public void setContentType(String contentType) {
+        this.contentType = contentType;
     }
 }
