@@ -2,9 +2,13 @@ package com.photosclone.diego.photos.clone.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotEmpty;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
+@Table("PHOTOS")
 public class Photo {
-    private String id;
+    @Id
+    private Integer id;
 
     @NotEmpty
     private String fileName;
@@ -20,11 +24,6 @@ public class Photo {
 
     }
 
-    public Photo(String fileName, String id) {
-        this.fileName = fileName;
-        this.id = id;
-    }
-
     public String getFileName() {
         return fileName;
     }
@@ -37,11 +36,11 @@ public class Photo {
         return contentType;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
