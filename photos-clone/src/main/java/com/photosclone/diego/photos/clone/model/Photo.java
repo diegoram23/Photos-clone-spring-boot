@@ -1,4 +1,4 @@
-package com.photosclone.diego.photos.clone;
+package com.photosclone.diego.photos.clone.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotEmpty;

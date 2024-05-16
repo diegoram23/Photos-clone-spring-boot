@@ -1,5 +1,6 @@
-package com.photosclone.diego.photos.clone;
+package com.photosclone.diego.photos.clone.service;
 
+import com.photosclone.diego.photos.clone.model.Photo;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;

@@ -1,5 +1,7 @@
-package com.photosclone.diego.photos.clone;
+package com.photosclone.diego.photos.clone.web;
 
+import com.photosclone.diego.photos.clone.model.Photo;
+import com.photosclone.diego.photos.clone.service.PhotosService;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

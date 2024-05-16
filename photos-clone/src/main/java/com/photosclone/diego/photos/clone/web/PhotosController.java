@@ -1,6 +1,7 @@
-package com.photosclone.diego.photos.clone;
+package com.photosclone.diego.photos.clone.web;
 
-import jakarta.validation.Valid;
+import com.photosclone.diego.photos.clone.model.Photo;
+import com.photosclone.diego.photos.clone.service.PhotosService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
